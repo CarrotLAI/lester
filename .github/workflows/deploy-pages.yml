@@ -55,10 +55,10 @@ jobs:
           stylelint "**/*.css" --quiet || true   # don't fail build yet
 
       # ── Upload the entire site as artifact ──
-      - name: Upload artifact
+      - name: Upload lester.github.io
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .               # root if HTML/CSS are already there
+          path: ./portfolio              # root if HTML/CSS are already there
                                 # or: ./public / ./dist if you output to a folder
 
   deploy:
