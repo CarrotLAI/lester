@@ -43,10 +43,9 @@ jobs:
 
       # Optional: Basic HTML validation (good for catching broken tags)
       - name: Validate HTML
-        uses: cyb3rko/html5validator-action@v1.2.0
+        uses: Cyb3r-Jak3/html5validator-action@master
         with:
-          root: .               # or ./public if you have a build folder
-          ignore: "Consider using the “h1” element as a top-level heading."
+          root: ./portfolio              # or ./public if you have a build folder
 
       # Optional: Basic CSS lint (stylelint)
       - name: Lint CSS
