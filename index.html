@@ -3,81 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Lester Jun Daras – Front-End Developer</title>
 </head>
 <body>
+    <header class="hero">
+        <!-- Put your photo at images/hero.jpg (landscape, 1600px+ wide). It is hidden automatically if the file is missing. -->
+        <img src="images/hero.jpg" alt="Lester Jun Daras" onerror="this.style.display='none'">
+        <div class="hero-inner">
+            <div class="home-txt">
+                <p class="hero-title">Building Digital Experiences Through Code.</p>
+                <a class="btn" href="#work">View my work</a>
+            </div>
+        </div>
+    </header>
     <div class="body-container">
-        <!-- #region Side Nav -->
-        <sidenav class="side-nav">
-            <div>
-                <h6>About Me</h6>
-            </div>
-            <div>
-                <h6>Skills</h6>
-            </div>
-            <div>
-                <h6>Portfolio</h6>
-            </div>
-            <div>
-                <h6>Experience</h6>
-            </div>
-        </sidenav>
-        <!-- #endregion -->
-        <!-- #region Content -->
-        <container class="content-container">
-            <div class="home">
-                <div class="home-container">
-                    <div class="home-txt">
-                        <img src="#" alt="profile.png">
-                        <span>Hello</span>
-                        <h1>Lester Jun Daras</h1> 
-                        <span>Web developer</span>
-                    </div>
-                    <div class="home-img">
-                        <div class="skills-crsl">
-                            <img src="" alt="icons.png">
-                        </div>
-                    </div>
+        <div class="content-container">
+            <aside>
+                <div>
+                    <h1>Lester Jun Daras</h1>
+                    <p>I build responsive, user-focused web applications that transform complex business processes into practical and efficient digital solutions.</p>
                 </div>
-            </div>
-            <div class="about-me">
-                <div class="abtme-container">
-                    <div class="abtme-txt">
-                        <small>
-                            Hi, I’m Lester — a full-stack web developer passionate about building interactive and user-friendly web applications.”
-                            “I love turning complex problems into simple, elegant solutions.
-                        </small>
-                    </div>
-                    <div class="abtme-expertise">
-                        Your Expertise
-                    </div>
-                </div>
-            </div>
-            <div class="skills-container">
-                <div class="skills-content">
-                    <!-- add for each for my skills -->
-                    <div class="skills-item">
-                        <icons></icons>
-                        <small></small>
-                    </div>
-                </div>
-            </div>
-            <div class="exp-container">
-                <!-- add foreach on exp -->
-                <div class="exp-content">
-                    <div class="exp-timeline"></div>
-                    <div class="exp-divider"></div>
-                    <div class="exp-content"></div>
-                </div>
-            </div>
-            <div class="cntct-container">
-                <div class="cntct-content">
-                    <button></button>
-                </div>
-            </div>
-        </container>
-        <!-- #endregion -->
+                <nav class="side-nav" aria-label="Sections">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+                <section id="about" class="about">
+                    <h2>About</h2>
+                    <p>
+                        I'm a Front-End Developer with 2+ years of professional experience in developing and maintaining web-based business applications using C#, .NET, Blazor WebAssembly, and MudBlazor. My experience revolves around building practical software solutions that support real business operations, including inventory management, leasing, accounting, and internal management systems.
+                    </p>
+                    <p>
+                        Beyond writing code, I take an active role in understanding business requirements, planning application workflows, designing user interfaces, and translating complex processes into maintainable and user-friendly applications.
+                    </p>
+                    <p>
+                        I've also taken on frontend leadership responsibilities, guiding fellow developers, coordinating frontend implementation, reviewing application flows, troubleshooting technical issues, and continuously improving existing systems.
+                    </p>
+                    <p>
+                        I believe that good software development goes beyond making an application work. It means creating solutions that are reliable, maintainable, efficient, and genuinely useful to the people who use them. I'm continuously expanding my skills, exploring modern frontend technologies, and learning new approaches to building better software.
+                    </p>
+                </section>
+                <section id="work" class="work">
+                    <h2>Selected Work</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <img src="images/project1.jpg" alt="Project Thumbnail" onerror="this.style.display='none'">
+                                </div>
+                                <div class="work-details">
+                                    <h3>Project Title</h3>
+                                    <p>Brief description of the project, highlighting key features and technologies used.</p>
+                                </div>
+                                <ul class="tags">
+                                    <li>Key Feature 1</li>
+                                    <li>Key Feature 2</li>
+                                    <li>Key Feature 3</li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section id="skills" class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Front-End Development</li>
+                        <li>.NET Development</li>
+                        <li>Blazor WebAssembly</li>
+                        <li>MudBlazor</li>
+                        <li>JavaScript</li>
+                        <li>HTML &amp; CSS</li>
+                        <li>Responsive Design</li>
+                        <li>UI/UX Design Principles</li>
+                    </ul>
+                </section>
+                <section id="experience" class="experience">
+                    <h2>Experience</h2>
+                    <ul>
+                        <li>
+                            <h3>Job Title</h3>
+                            <p class="company">Company Name · Location</p>
+                            <p class="duration">Duration</p>
+                            <p>Description of responsibilities and achievements.</p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="contact" class="contact">
+                    <h2>Contact</h2>
+                    <p>Feel free to reach out if you have any questions or opportunities!</p>
+                    <a class="btn" href="mailto:you@example.com">Email me</a>
+                </section>
+            </main>
+        </div>
     </div>
-    </body>
+</body>
 </html>
